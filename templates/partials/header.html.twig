@@ -1,0 +1,7 @@
+
+    
+    <div class="card-container d-flex justify-content-around">
+        {% for card in cards %}
+            {% include 'default/card/card.html.twig' with {'card': card} %}    
+        {% endfor %}
+    </div>

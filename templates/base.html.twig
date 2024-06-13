@@ -1,0 +1,16 @@
+{# base.html.twig #}
+
+{% include 'partials/head.html.twig' %}
+<body>
+    <div class="container-fluid m-0 p-0">
+        {% include 'layout/top.html.twig' %}
+        {% include 'partials/cover.html.twig'  %}
+        {% include 'layout/navigation/navbar.html.twig' %}
+        
+    </div>
+
+    <main class="mb-5">
+        {% block content 'content' %}
+    </main>
+
+{% include 'partials/footer.html.twig' %}

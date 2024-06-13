@@ -1,0 +1,18 @@
+{# home.html.twig #}
+{% extends "base.html.twig" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+    <form class="login-form w-50" action="">
+        <label class="text-danger underline t-bold th-40" for="">S'enregistrer</label>
+        <input class="form-control w-50 mb-2" type="text" placeholder="Name">
+        <input class="form-control w-50 mb-2" type="text" placeholder="Username">
+        <input class="form-control w-50 mb-2" type="text" placeholder="Email">
+        <input class="form-control w-50 mb-2" type="password" placeholder="password">
+        <input class="form-control w-50 mb-2" type="password" placeholder="Confirm-password">
+        <input class="form-control w-50 btn btn-primary" type="submit" value="Se connecter">
+    </form>
+
+{% endblock %}

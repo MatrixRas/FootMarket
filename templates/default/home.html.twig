@@ -1,0 +1,32 @@
+{# home.html.twig #}
+{% extends "base.html.twig" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <section>
+        {% include('partials/header.html.twig') %}
+        {% block cover %}
+        <div class=" text-cover col-lg-5 ml-auto">
+            <h1 class="text-white">World Cup Event</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, molestias repudiandae pariatur.</p>
+            <div id="date-countdown"></div>
+            <p>
+              <a href="#" class="btn btn-primary py-3 px-4 mr-3">Book Ticket</a>
+              <a href="#" class="more light">Learn More</a>
+            </p>  
+          </div>
+        {% endblock %}
+    </section>
+
+    <section class="partners-section">
+        <h1 class="section-title underline ml-3">Nos partenaires</h1>
+        <div class="partners-container row m-0">
+            {% for club in clubs %}
+                <div class="partner col-md-3 h-20">
+                    <img class="partner-image" src="{{ club.image }}" alt="{{ club.name }}">
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}

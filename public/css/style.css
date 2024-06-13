@@ -1,0 +1,288 @@
+:root {
+    --main-color: #002F48;
+    --secondary-color: #D22727;
+    --third-color: #F27C00;
+    --fourth-color: rgb(11, 100, 11);
+    --main-text-color: #E8DFB1;
+    --secondary-text-color: #FCBD43;
+    --white: #ffffff;
+}
+.main-color {
+    background-color: var(--main-color);
+}
+
+.secondary-color {
+    background-color: var(--secondary-color);
+}
+
+.third-color {
+    background-color: var(--third-color);
+}
+
+.main-text-color {
+    color: var(--main-text-color);
+}
+
+.secondary-text-color {
+    color: var(--secondary-text-color);
+}
+
+
+/*animation */
+.anim {
+    transition: color 0.3s;
+
+}
+.anim :hover {
+    color: #ffa500; /* Une couleur d'accent pour le survol */
+}
+.h-70{
+    height: 70%;
+}
+.w-70{
+    width: 70%;
+}
+
+.h-40{
+    height: 40%;
+}
+.w-40{
+    width: 40%;
+}
+.h-30{
+    height: 30%;
+}
+.w-30{
+    width: 30%;
+}
+.h-20{
+    height: 20%;
+}
+.w-20{
+    width: 20%;
+}
+
+.h-10{
+    height: 10%;
+}
+.w-10{
+    width: 10%;
+}
+.h-5{
+    height: 5%;
+}
+.w-5{
+    width: 5%;
+}
+.underline {
+    text-decoration: underline;
+}
+.t-bold {
+    font-weight: bold;
+}
+.th-40 {
+    font-size: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%!important;
+    margin: 0;
+    padding: 0;
+}
+.topbar {
+    height: 80px;
+}
+
+.logo-1 {
+    font-size: 10px;
+    color: var(--main-color);
+}
+.logo-2 {
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+.logo-3 {
+    font-size: 10px;
+    color: var(--fourth-color);
+}
+
+.topbar {
+    height: 20px;
+}
+.navbar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    z-index: 998;
+    display: flex;
+    align-items: start;
+    transition: right 0.5s;
+}
+.navbar.active {
+    right: 0;
+}
+
+.nav {
+
+}
+
+.background-container {
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url('/image/fond2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.text-cover {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.login-form {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer {
+    background-color: var(--main-color); /* Utilisation de la couleur de fond demandée */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-nav {
+    margin: 15px 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/*card */
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    position: relative;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 145px;
+    height: 240px;
+    margin: 20px;
+    text-align: center;
+    z-index: 999;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.card-content p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* Menu */
+
+
+.menu-btn {
+    border : none ;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: var(--white);
+    transition: right 0.5s;
+}
+.menu-btn.active {
+    right: 250px;
+}
+
+.menu-btn,i {
+    font-size: 30px;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center center; }
+    .hero, .hero > .container > .row {
+      height: 94vh;
+      min-height: 500px; }
+    .hero.overlay:before {
+      content: "";
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .hero h1 {
+      font-weight: 700;
+      font-size: 4rem; }
+      @media (max-width: 991.98px) {
+        .hero h1 {
+          font-size: 2.5rem; } }
+    .hero p {
+      color: rgba(255, 255, 255, 0.7); }
+
+/*partners-section*/
+
+.partners-section {
+}
+
+.partner-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 10px 0;
+}
